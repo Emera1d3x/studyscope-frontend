@@ -1,0 +1,132 @@
+.ourteam-page {
+  display: flex;
+  flex-direction: column;
+  font-family: "Inter", sans-serif;
+  color: #333;
+}
+
+.ourteam-banner {
+  position: relative;
+  width: 100%;
+  max-height: 250px;
+  overflow: hidden;
+  background-color: rgb(66, 0, 128);
+}
+/* Banner */
+.ourteam-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(3px) opacity(0.7);
+}
+
+/* Sections */
+.ourteam-section {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 0 20px;
+  text-align: left;
+}
+
+.ourteam-section h2 {
+  font-size: 2rem;
+  color: #222;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.ourteam-section h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(45deg, #cb6ce6, #004aad);
+  margin-top: 8px;
+  border-radius: 2px;
+}
+
+.ourteam-section p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+.exec-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.exec-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.exec-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+
+.exec-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.exec-card h3 {
+  font-size: 1.3rem;
+  color: #222;
+  margin-bottom: 5px;
+}
+
+.exec-card .role {
+  font-size: 1rem;
+  color: #004aad;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.exec-card .bio {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.join {
+  background: #f9f9ff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.apply-text {
+  margin-top: 15px;
+  font-weight: 500;
+}
+
+.apply-text a {
+  color: #004aad;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.apply-text a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .ourteam-section h2 {
+    font-size: 1.6rem;
+  }
+  .ourteam-section p {
+    font-size: 1rem;
+  }
+}

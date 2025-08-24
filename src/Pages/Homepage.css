@@ -1,0 +1,194 @@
+@font-face {
+	font-family: inter;
+	src: url('../Assets/Fonts/Inter-Regular.otf') format("opentype");
+}
+
+@font-face {
+	font-family: inter-semibold;
+	src: url('../Assets/Fonts/Inter-SemiBold.otf') format("opentype");
+}
+
+.homepage-container {
+    background-color: rgb(255, 255, 255);
+}
+.homepage-hero {
+    padding-top: 90px;
+    height: calc(100% - 70px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.slogan {
+    font-family: inter-semibold;
+    color: #232323;
+    text-align: center;
+    font-size: 7rem;
+}
+.special1 {
+  background-image: linear-gradient(45deg, #f7d19c, #66aed0, #9d66d0, #ebab51);
+  background-size: 300% 300%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientShift 6s ease infinite;
+}
+.special2 {
+  background-image: linear-gradient(45deg, #ebab51, #9d66d0, #66aed0, #f7d19c);
+  background-size: 300% 300%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientShift 6s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.subheader {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: inter;
+    color: #232323;
+    text-align: center;
+    font-size: 1.6rem;
+    max-width: 700px;
+}
+.get-started-btn {
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+    cursor: pointer;
+    padding: 15px 25px;
+    border-radius: 100px;
+    font-family: inter-semibold;
+    font-size: 1.1rem;
+    color: white;
+    margin-bottom: 20px;
+    background-image: linear-gradient(45deg, #232323, #232323);
+}
+
+.get-started-btn:hover {
+    background-image: linear-gradient(45deg, #951fea, #5500ff);
+}
+
+.get-started-btn:active {
+    background-image: linear-gradient(45deg, #cc8cfa, #b998fa);
+}
+.submain {
+    padding-top: 12px;
+    text-align: center;
+}
+.specialization{
+    font-size: 1rem;
+    font-family: inter;
+    color: #767575;
+}
+.subject-rows {
+    display: flex;
+    flex-direction: row;
+    gap: 22px;
+    padding: 0px 200px;
+    padding-bottom: 22px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.subject {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    gap: 12px;
+}
+.subject-name {
+    font-size: 1rem;
+    font-family: inter;
+    color: #767575;
+}
+.subject-icon {
+    height: 34px;
+    filter: opacity(0.5);
+}
+.intro, 
+.brief-programs,
+.online-reviews {
+    padding: 80px 20px;
+    text-align: center;
+    font-family: inter;
+}
+
+.intro-tagline {
+    font-family: inter-semibold;
+    font-size: 2.2rem;
+    margin-bottom: 16px;
+    color: #232323;
+}
+
+.intro-text {
+    font-size: 1.2rem;
+    color: #5c5c5c;
+    max-width: 700px;
+    margin: 0 auto 24px;
+    line-height: 1.6;
+}
+
+.intro-features {
+    font-size: 1.1rem;
+    color: #444;
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+
+.intro-video {
+    width: 100%;
+    max-width: 700px;
+    height: 400px;
+    background-color: #f5f5f5;
+    margin: 0 auto;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #888;
+    font-size: 1.4rem;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.08);
+}
+
+.brief-programs-title {
+    font-family: inter-semibold;
+    font-size: 2rem;
+    margin-bottom: 24px;
+    color: #232323;
+}
+
+.brief-programs {
+    background: #fafafa;
+    border-radius: 20px;
+    padding: 60px 20px;
+}
+
+.brief-programs-btn {
+    display: inline-block;
+    margin-top: 24px;
+    padding: 14px 28px;
+    background: linear-gradient(45deg, #232323, #232323);
+    color: white;
+    border-radius: 50px;
+    font-family: inter-semibold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.brief-programs-btn:hover {
+    background: linear-gradient(45deg, #951fea, #5500ff);
+}
+
+.online-reviews {
+    background: rgb(244, 244, 244);
+    padding: 80px 20px;
+}
+
+

@@ -1,0 +1,95 @@
+.aboutus-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  color: #333;
+  padding: 0 20px;
+}
+
+.aboutus-header {
+  padding-top: 100px;
+  padding-bottom: 60px;
+  max-width: 900px;
+  text-align: center;
+}
+
+.aboutus-header h1 {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  color: #323232;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.aboutus-header p {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.7;
+  margin: 0 auto;
+}
+
+.aboutus-section {
+  max-width: 850px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: left;
+}
+
+.aboutus-section h2 {
+  font-size: 2rem;
+  color: #222;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.aboutus-section h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(45deg, #cb6ce6, #004aad);
+  margin-top: 8px;
+  border-radius: 2px;
+}
+
+.aboutus-section p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #444;
+}
+
+.method {
+  background: #f9f9ff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.method-list {
+  margin: 20px 0;
+  padding-left: 20px;
+}
+
+.method-list li {
+  margin-bottom: 12px;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.method-list strong {
+  color: #004aad;
+}
+
+@media (max-width: 768px) {
+  .aboutus-header h1 {
+    font-size: 2.4rem;
+  }
+  .aboutus-section h2 {
+    font-size: 1.6rem;
+  }
+  .aboutus-header p,
+  .aboutus-section p {
+    font-size: 1rem;
+  }
+}

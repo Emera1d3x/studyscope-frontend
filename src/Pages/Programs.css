@@ -1,0 +1,167 @@
+.programs-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: inter;
+}
+
+.programs-header {
+  padding-top: 80px;
+  padding-bottom: 40px;
+  max-width: 800px;
+  text-align: center;
+}
+
+.programs-header h1 {
+  font-family: inter-semibold;
+  color: #323232;
+  font-size: 4rem;
+  margin-bottom: 0.5rem;
+}
+
+.programs-header p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+	margin-left: 45px;
+	margin-right: 45px;
+}
+
+.programs-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.program-card {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  max-width: 1200px;
+  box-shadow: 0px 5px 25px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  margin-bottom: 45px;
+	margin-left: 45px;
+	margin-right: 45px;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+  background: #fff;
+}
+
+.program-card:hover {
+  transform: translateY(-3px);
+}
+
+.program-image {
+  width: 100%;
+  height: 350px;
+}
+
+.program-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.program-info {
+  padding: 4vh;
+  text-align: left;
+}
+
+.program-info h2 {
+  font-size: 1.5rem;
+	margin: 0;
+}
+
+.program-cost {
+	margin: 4px;
+}
+
+.program-info p {
+	padding: 0;
+  color: black;
+}
+
+.program-tags {
+  padding-top: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.tag {
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 5px 5px 0 0;
+  font-size: 80%;
+  font-weight: 500;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.tag-semester-based { background-color: #6fdc78; } 
+.tag-small-class-sizes { background-color: #6f80dc; } 
+.tag-curriculum-driven { background-color: #a07adc; }
+.tag-focus-on-mastery { background-color: #e0aa63; }  
+.tag-centers { background-color: #e76b89; }         
+.tag-scheduled-times { background-color: #a97c65; }
+.tag-interactive { background-color: #4fbfae; }  
+.tag-remote { background-color: #8b6fde; }         
+.tag-flexible-scheduling { background-color: #e0724c; }
+.tag-accessible { background-color: #6e8797; }      
+
+.program-register {
+  font-family: inherit;
+  background-image: linear-gradient(45deg, #951fea, #5500ff);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 100px;
+  transition-duration: 0.3s;
+  text-align: center;
+  font-size: 100%;
+  cursor: pointer;
+  margin-top: 2vh;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.program-register:hover {
+  background-image: linear-gradient(45deg, #c475fc, #a67cfc);
+}
+
+.program-register:active {
+  background-image: linear-gradient(45deg, #d7a4fc, #ceb6fe);
+}
+
+@media screen and (max-width: 900px) {
+  .program-card {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+  }
+
+  .program-image {
+    width: 100%;
+    height: 250px;
+  }
+
+  .program-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 0;
+  }
+
+  .program-info {
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .program-tags {
+    justify-content: center;
+  }
+}
+
