@@ -6,6 +6,7 @@ import "../Pages/Homepage.css";
 import MathIcon from "../Assets/Icons/MathIcon.png";
 import EnglishIcon from "../Assets/Icons/EnglishIcon.png";
 import ScienceIcon from "../Assets/Icons/ScienceIcon.png";
+import { Link } from "react-router-dom";
 
 function HomePage() {
   return (
@@ -17,7 +18,7 @@ function HomePage() {
         <div className="homepage-hero">
           <div className="slogan">Turning <span className="special1">Effort</span> <br/> into <span className="special2">Excellence</span></div>
           <div className="subheader">Structured programs and private tutoring with a custom curriculum for K–11</div>
-					<div className="get-started-btn"> Get Started</div>
+					<Link to="/start" className="get-started-btn"> Get Started</Link>
 					<div className="submain">
 						<div className="specialization"> We specialize in</div>
 						<div className="subject-rows">

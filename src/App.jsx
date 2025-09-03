@@ -7,8 +7,14 @@ import Programs from "./Pages/Programs";
 import AboutUs from "./Pages/AboutUs";
 import Contact from "./Pages/Contact";
 import OurTeam from "./Pages/OurTeam";
-import SignIn from "./Pages/SignIn";
-import Register from "./Pages/Register";
+import Start from "./Pages/Start"
+import SignUp from "./Pages/Auth/SignUp";
+import Logout from "./Pages/Auth/Logout";
+import ParentLogin from "./Pages/Auth/ParentLogin";
+import StudentLogin from "./Pages/Auth/StudentLogin";
+import ParentDashboard from "./Pages/Auth/ParentDashboard";
+import StudentDashboard from "./Pages/Auth/StudentDashboard";
+import ResetPassword from "./Pages/Auth/ResetPassword";
 
 function App() {
   return (
@@ -20,8 +26,14 @@ function App() {
               <Route path="/about-us" element={<AboutUs />}></Route>
               <Route path="/contact" element={<Contact />}></Route>
               <Route path="/our-team" element={<OurTeam />}></Route>
-              <Route path="/signin" element={<SignIn />}></Route>
-              <Route path="/register" element={<Register />}></Route>
+              <Route path="/start" element={<Start />}></Route>
+              <Route path="/signup" element={<SignUp />}></Route>
+              <Route path="/logout" element={<Logout />}></Route>
+              <Route path="/parent/login" element={<ParentLogin />}></Route>
+              <Route path="/student/login" element={<StudentLogin />}></Route>
+              <Route path="/parent/dashboard" element={<ParentDashboard />}></Route>
+              <Route path="/student/dashboard" element={<StudentDashboard />}></Route>
+              <Route path="/reset-password/:token" element={<ResetPassword />}></Route>
             </Routes>
           </BrowserRouter>
     </div>

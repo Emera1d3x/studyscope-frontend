@@ -1,0 +1,23 @@
+.parentdashboard-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: inter;
+}
+
+.parentdashboard-header {
+  padding-top: 80px;
+  max-width: 800px;
+  text-align: center;
+  font-family: inter-semibold;
+  color: #323232;
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+.parentdashboard-caption {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+	margin-left: 45px;
+	margin-right: 45px;
+}

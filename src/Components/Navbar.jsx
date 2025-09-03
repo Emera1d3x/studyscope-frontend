@@ -56,7 +56,7 @@ function Navbar({ type = 0 }) {
 									)}
 								</div>
 							</div>
-							<Link to="/signup" className="navbar-register">Get Started!</Link>
+							<Link to="/start" className="navbar-register">Get Started!</Link>
 						</>
 					) : type === 1 ? (
 						// Logged in student
@@ -111,7 +111,7 @@ function Navbar({ type = 0 }) {
 										<Link to="/signup" className="navbar-signup">Sign Up</Link>
 									</div>
 								</div>
-								<Link to="/signup" className="navbar-register">Get Started!</Link>
+								<Link to="/start" className="navbar-register">Get Started!</Link>
 							</>
 						) : type === 1 ? (
 							// Logged in student
